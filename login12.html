@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Javascript Login Form Validation</title>
+<!-- Include CSS File Here -->
+<link rel="stylesheet" href="style.css"/>
+<!-- Include JS File Here -->
+<script src="login.js"></script>
+</head>
+<body>
+  <script>
+  var x=document.forms["myform"]["username"];
+  if(x==''){
+    alert("Name is compulsory");
+    return false;
+
+  }
+  </script>
+<div class="container">
+<div class="main">
+<h2> Login Page </h2>
+<form id="form_id" method="post" name="myform" action="">
+<label>Email-ID :</label>
+<input type="text" name="username" id="username"/>
+<label>Password :</label>
+<input type="password" name="password" id="password"/>
+<input type="button" value="Login" id="submit" onclick="validate()"/><br><br>
+<input type="reset" value="Reset" name="Reset">
+<p>If you have not register, Please Register<input type="button" name="Reg" value="Register" onClick="parent.location='register.html'">
+</form>
+</div>
+</body>
+</html>
